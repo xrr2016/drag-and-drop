@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  color: #323232;
+  background: burlywood;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background: white;
+  margin: 1rem;
+  border: 2px solid yellowgreen;
+}
+
+.box.is-enter {
+  border-style: dashed;
+}
+
+.content {
+  width: 80%;
+  height: 80%;
+  background-image: url(cup.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.content.is-draging {
+  opacity: 0.8;
+}
